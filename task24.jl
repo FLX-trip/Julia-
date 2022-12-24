@@ -1,4 +1,7 @@
 using HorizonSideRobots
+
+# Написать рекурсивную функцию, перемещающую робота на расстояние от перегородки с заданного направления вдвое меньшее исходного.
+
 function half_dist!(robot, side)
     if !isborder(robot, side)
         move!(robot, side)
