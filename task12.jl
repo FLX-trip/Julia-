@@ -11,7 +11,7 @@ export mark_chess
 
     function mark_chess(r::Robot,n::Int)
         global CELL_SIZE
-        CELL_SIZE::Int = n        #инициализация глобальной переменной
+        CELL_SIZE::Int = n #инициализация глобальной переменной
 
         #Робот - в юго-западном углу
         side=Ost
@@ -46,7 +46,7 @@ export mark_chess
             Y_COORD-=1
         elseif side==Ost
             X_COORD+=1
-        else # side==West
+        else side==West
             X_COORD-=1
         end
         move!(r,side)
